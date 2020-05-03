@@ -42,7 +42,7 @@ function display() {
     to_do.getTasks().forEach(e => {
         const div = document.createElement('div');
         div.setAttribute('class', 'task');
-        div.innerHTML = `<a>${e.getValue()}</a><button class="done">będę</button>`
+        div.innerHTML = `<a>${e.getValue()}</a><button class="done">zrobione!</button>`
         tasks_to_do.appendChild(div);
         div.querySelector('button').addEventListener('click', remove_task)
     });
